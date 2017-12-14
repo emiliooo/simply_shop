@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>SHOP</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+<body>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">Koszyk <span class="showifempty">jest pusty </span></h4>
+                </div>
+                <div class="hideifempty">                   
+                    <div class="modal-body ">
+                        <div class="simpleCart_items"></div>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Łącznie</th>
+                                    <th>Koszty przesyłki</th>
+                                    <th>Do zapłaty</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="simpleCart_total"></div>
+                                    </td>
+                                    
+                                    <td>
+                                        <div class="simpleCart_shipping"></div>
+                                    </td>
+                                    <td>
+                                        <div class="simpleCart_grandTotal"></div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+             
+                <div class="modal-footer">
+                    <a href="javascript:;" class="simpleCart_empty btn btn-primary"> Opróżnij koszyk </a>
+                    <button type="button" class="btn btn-default simpleCart_checkout" href="javascript:;" data-dismiss="modal"> Złóż zamówienie    </button>
+                </div> 
+            </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar">
+                    <div class="container-fluid">
+                        <div class="navbar-header" >
+                            <a class="navbar-brand" href="#">Simply shop</a>
+                        </div>
+                        <ul  class="nav navbar-nav navbar-right  ">
+                            <li >
+                                <a href="#"  data-toggle="modal" data-target="#myModal">Koszyk( <span class="simpleCart_quantity"></span> )</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+   
+    <p>&nbsp;</p>
+
+    <div class="container">
+        <div class="row"><!--      ROW       -->
+            <div class="col-md-4 item text-center ">
+                <div class="simpleCart_shelfItem">
+                    <h2 class="item_name">Apple iPhone </h2>
+                    <div class="item-thumb">
+                      <img class="item_thumb"  src="img/if_Apple iPhone_8455.png" alt="Apple iPhone">  
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>
+                                <span class="item_price">650 zł</span>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-md-offset-4">
+                            <input type="text" value="1" class="form-control" placeholder="ilość">
+                        </div>
+                        <div class="col-md-5">
+                            <a class="item_add btn btn-primary" href="javascript:;"> Dodaj </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--     simplycard     -->
+            </div>
+            <!--      ROW       -->
+
+            <div class="col-md-4  item ">
+                <div class="simpleCart_shelfItem">
+                    <h2 class="item_name">Asus MyPal </h2>
+                    <img class="item_thumb" src="img/if_Asus MyPal A626_8457.png" alt="">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>
+                                <span class="item_price">850 zł</span>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-md-offset-4">
+                            <input type="text" value="1" class="form-control" placeholder="ilość">
+                        </div>
+                        <div class="col-md-5">
+                            <a class="item_add btn btn-primary" href="javascript:;"> Dodaj </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--     simplycard     -->
+            </div>
+
+            <div class="col-md-4  item ">
+                <div class="simpleCart_shelfItem">
+                    <h2 class="item_name">Asus MyPal A639 </h2>
+                    <img class="item_thumb" src="img/if_Asus MyPal A639_8458.png" alt="">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>
+                                <span class="item_price">350 zł</span>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-md-offset-4">
+                            <input type="text" value="1" class="form-control" placeholder="ilość">
+                        </div>
+                        <div class="col-md-5">
+                            <a class="item_add btn btn-primary" href="javascript:;"> Dodaj </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--     simplycard     -->
+            </div>
+        </div>
+        <!--      ROW   END    -->
+
+        <div class="row">
+            <div class="col-md-4  item ">
+                <div class="simpleCart_shelfItem">
+                    <h2 class="item_name">Eten G500 </h2>
+                    <img class="item_thumb" src="img/if_Eten G500_8465.png" alt="">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>
+                                <span class="item_price">999 zł</span>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-md-offset-4">
+                            <input type="text" value="1" class="form-control" placeholder="ilość">
+                        </div>
+                        <div class="col-md-5">
+                            <a class="item_add btn btn-primary" href="javascript:;"> Dodaj </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--     simplycard     -->
+            </div>
+            <div class="col-md-4  item">
+                <div class="simpleCart_shelfItem">
+                    <h2 class="item_name">HTC Apache </h2>
+                    <img class="item_thumb" src="img/if_HTC Apache_8480.png" alt="">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>
+                                <span class="item_price">850 zł</span>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-md-offset-4">
+                            <input type="text" value="1" class="form-control" placeholder="ilość">
+                        </div>
+                        <div class="col-md-5">
+                            <a class="item_add btn btn-primary" href="javascript:;"> Dodaj </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--     simplycard     -->
+            </div>
+            <div class="col-md-4  item">
+                <div class="simpleCart_shelfItem">
+                    <h2 class="item_name">Nokia N95 </h2>
+                    <img class="item_thumb" src="img/if_Nokia N95_8499.png" alt="">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>
+                                <span class="item_price">740 zł</span>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-md-offset-4">
+                            <input type="text" value="1" class="form-control" placeholder="ilość">
+                        </div>
+                        <div class="col-md-5">
+                            <a class="item_add btn btn-primary" href="javascript:;"> Dodaj </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--     simplycard     -->
+            </div>
+        </div>
+        <!--      ROW   END    -->
+
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/js/simpleCart.js">
+    </script>
+    <script type="text/javascript" src="/js/app.js">
+    </script>
+    <script type="text/javascript" src="/js/mixitup.min.js">
+    </script>
+    <script type="text/javascript">
+
+    var mixer = mixitup('.container');
+    var mixer = mixitup(containerEl);
+    var mixer = mixitup(containerEl, {
+    selectors: {
+        target: '.blog-item'
+    },
+    animation: {
+        duration: 300
+    }
+    });
+    </script>
+</body>
+
+</html>
